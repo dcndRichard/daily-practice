@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daily practice</title>
+    <style>
+        :root {
+
+            font-size: 20px;
+            --ff: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            --h1: bold 2rem/2.4rem var(--ff);
+            --h2: bold 1.3rem/1.4rem var(--ff);
+            --p: .9rem/1.3rem var(--ff);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            padding:0 4em;
+        }
+        h1 {
+            font: var(--h1);
+            margin-bottom:.5em;
+        }
+        h2 {
+            font: var(--h2);
+            margin-bottom:1em;
+        }
+
+        p {
+            font: var(--p)
+        }
+         img{
+            max-width:100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <two-clmnsection>
+            <h1 slot="colmn-heading">Practice code, <br />Learn and love daily.</h1>
+            <p slot="colmn-subheading">It is an investment into yours, theirs and our future.Be the solution.</p>
+            <img slot="the-image" src="./images/code-typing-concept-illustration/4498903.jpg" alt="image of coding">
+        </two-clmnsection>
+        <twocolumn-textrow>
+            <h2>Scrabble tournament</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officia maiores nulla numquam optio tempore quisquam tempora ipsum dolorem, odit placeat, consequuntur alias voluptas ratione quibusdam quo provident adipisci autem esse iste quae, obcaecati voluptatem! Culpa alias quibusdam eveniet earum dolor, placeat optio non. Reprehenderit sapiente porro quis unde nulla!</p>
+            <p slot="rt-clmn-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus soluta aut amet vel natus voluptas, aliquam maiores aspernatur corrupti blanditiis asperiores. Iste enim porro, et magni at vitae repellat necessitatibus odit? Nobis veritatis nostrum cupiditate eaque quo aperiam tenetur, nemo ipsa adipisci atque perspiciatis sapiente, porro fugiat eos, explicabo aut!</p>
+        </twocolumn-textrow>
+        <threecolumn-textrow>
+            <h2>water sking</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quas! Quae suscipit recusandae odit perspiciatis nulla impedit voluptatibus cumque consectetur? Odio vero recusandae magnam officiis quibusdam rem non ipsum sunt?</p>
+            <h2 slot="mid-clm-heading">water sking</h2>
+            <p slot="mid-clm-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quas! Quae suscipit recusandae odit perspiciatis nulla impedit voluptatibus cumque consectetur? Odio vero recusandae magnam officiis quibusdam rem non ipsum sunt?</p>
+            <h2 slot="third-clm-heading">water sking</h2>
+            <p slot="third-clm-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quas! Quae suscipit recusandae odit perspiciatis nulla impedit voluptatibus cumque consectetur? Odio vero recusandae magnam officiis quibusdam rem non ipsum sunt?</p>
+        </threecolumn-textrow>
+
+
+    </main>
+    <footer></footer>
+    <script src="section_components.js"></script>
+</body>
+
+</html>
