@@ -1,0 +1,16 @@
+import mongoose from 'mongoose'
+const Schema = mongoose.Schema;
+const ContestGroup = new Schema({
+  contest : {
+    type: Schema.Type.ObjectId,
+    ref: 'Contest',
+  }
+  contestants = { 
+    type : [Schema.Type.ObjectId],
+    ref : 'Contestant,
+  votedBy : {
+    type: [Schema.Type.ObjectId],
+    ref: 'User'
+  }
+
+})
